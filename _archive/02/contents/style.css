@@ -1,0 +1,56 @@
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding:0;
+  font-family: ubuntu, calibri, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5em;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/circuit.jpg");
+  background-color: #333;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#toolBar {
+  position: fixed;
+}
+
+.tile {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10%;
+}
+
+.blackWhite {
+  background: #EEE;
+  color: #444;
+}
+
+.colored {
+  background: #FC0;
+  color: #832;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+#title {
+  color: #EEE;
+  text-stroke: 2px #000;
+  text-shadow: 2px 2px 3px #023;
+}

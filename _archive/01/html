@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+
+  <body>
+
+    <div id="main">
+
+      <div class="toolBar">
+      </div>
+
+      <div id="panelTitle">
+        <h1>HawAI.tech</h1>
+        <h3>Hardware for AI</h3>
+      </div>
+
+      <div id="panelDescription">
+
+        <div id="desc1">
+          <h3>01 /Rebooting computing</h3>
+          <p>L’ère glorieuse des ordinateurs d’architecture
+            von Neumann est derrière nous.
+            Ce type de machine a atteint ses limites,
+            tant du point de vue technologique que de
+            celui des applications. Une grande effervescence
+            (rebooting computing) règne dans le monde du traitement
+            de l’information pour essayer d’imaginer et de
+            développer des concepts alternatifs.</p>
+        </div>
+
+        <div id="desc2">
+          <h3>02 / HawAI.tech</h3>
+          <p>Nous proposons avec la start-up Hawai.Tech
+            une voie originale dont l’objectif
+            est de développer et promouvoir les méthodes mathématiques,
+            les algorithmes, les composants électroniques,
+            les circuits, les dispositifs intégrés et les machines pour
+            l’intelligence artificielle probabiliste.</p>
+        </div>
+
+        <div id="desc3">
+          <h3>03 / Histoire</h3>
+          <p>Vingt ans de recherche fondamentale
+            dans différents laboratoires, financée par plusieurs
+            projets européens, a permis d’arriver à une conception
+            très aboutie de ces architectures reposant à la fois sur
+            des bases théoriques solides et
+            des expérimentations concluantes.</p>
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+  </body>
+</html>

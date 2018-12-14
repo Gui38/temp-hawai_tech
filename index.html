@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="contents/style.css">
+  </head>
+
+  <body>
+
+    <div id="main">
+
+      <div id="toolBar">
+
+        <a id="toFR"
+          onclick="changeTexts('FR');">
+          <img src="contents/img/flag_FR.png" alt=""
+            class="icon">
+          FR
+        </a>
+
+        <a id="toEN"
+          onclick="changeTexts('EN');">
+          <img src="contents/img/flag_EN.png" alt=""
+            class="icon">
+          EN
+        </a>
+
+      </div>
+
+
+      <div id="scroll">
+
+        <div id="title" class="tile">
+          <h1 data-text="mainTitle"></h1>
+          <h3 data-text="mainSubtitle"></h3>
+        </div>
+
+        <div id="vision" class="tile blackWhite">
+          <h1 data-text="visionTitle"></h1>
+
+          <div id="item_reboot">
+            <h3>
+              <span class="textColor">01/</span>
+              <span data-text="item_rebootTitle"></span>
+            </h3>
+            <p data-text="item_rebootText"></p>
+
+          </div>
+
+        </div>
+
+        <div id="service" class="tile colored">
+          <h1 data-text="serviceTitle"></h1>
+          <img src="contents/img/bulb.png" alt="*idea*">
+          <hr/>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="contents/texts.js"></script>
+  <script type="text/javascript">
+
+lang = "FR"
+
+function changeTexts (lang) {
+  var elems = document.body.getElementsByTagName("*");
+
+  for (var i=0; i<elems.length; i++) {
+    elem = elems[i];
+    if (elem.dataset.text) {
+      while (elem.firstChild) {
+        elem.removeChild(elem.firstChild);
+      }
+      elem.appendChild(
+        document.createTextNode(
+          texts[elem.dataset.text][lang]
+        )
+      );
+    }
+  }
+};
+
+window.onload = function () {
+
+  //get the texts
+  changeTexts(lang)
+
+}
+
+  </script>
+
+</html>
